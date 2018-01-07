@@ -1,13 +1,13 @@
 package com.example.test.customtokan.domain;
 
-import org.springframework.security.web.bind.annotation.AuthenticationPrincipal;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@SuppressWarnings("deprecation")
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+
 @Target({ElementType.PARAMETER, ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @AuthenticationPrincipal
